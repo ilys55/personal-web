@@ -21,24 +21,27 @@
     <div class="container">
         <form class="form">
             <label class="label-contact" for="">Name</label>
-            <input class="input-contact" type="text">
+            <input class="input-contact" type="text" id="inputName" />
             <label class="label-contact" for="">Email</label>
-            <input class="input-contact" type="text">
+            <input class="input-contact" type="text" id="inputEmail"/>
             <label class="label-contact" for="">Phone Number</label>
-            <input class="input-contact" type="text">
+            <input class="input-contact" type="text" id="inputPhone"/>
             <label class="label-input" for="">Subject</label>
-            <select class="input-contact" name="" id="">
-                <option value="">Frontend Developer</option>
-                <option value="">Backend Developer</option>
-                <option value="">Fullstack Developer</option>
+            <select id="inputSubject" class="input-contact">
+               <option></option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
             </select>
-            <label class="label-contact" for="">Your Message</label>
-            <textarea class="input-contact" name="" id="" cols="30" rows="10"></textarea>
+            
+            <label class="label-contact" for="" id="">Your Message</label>
+            <textarea class="input-contact" name="" id="inputMessage" cols="30" rows="10"></textarea>
             <div class="btn-">
-            <input class="btn-form" type="button" value="submit"/>
-        </div>
+                <input class="btn-form" type="button" value="submit" onclick="submitData()"/>
+            </div>
         </form>
     </div>
+    <script src="contact.js"></script>
 </body>
-
+    
 </html>
