@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(228, 227, 230);
+}
+
+.kakek {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 5px;
+}
+
+.label-contact {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.input-contact {
+    background-color: white;
+    box-shadow: inset;
+    border-radius: 5px;
+    border-color: black;
+
+}
+nav{
+    height: 75px;
+    background-color:#f4f3f3;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.menu-kiri{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+    
+    width: 100%;
+}
+li{
+    font-size: 15px;
+}
+
+.menu-kiri li a{
+   
+    text-decoration: none;
+    color: black;
+}
+.menu-kiri img{
+  
+    height: 50px;
+}
+.menu-kanan {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.btn{
+        background-color: black;
+        color: white;
+        padding: 7px;
+        width: 100px;
+        font-size: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+.menu-kiri a:hover {
+    color: orangered;
+}
+.menu-kanan .btn:hover {
+    color: orangered;
+}
