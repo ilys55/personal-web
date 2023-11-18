@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav style="">
+        <div class="menu">
+            <ul class="menu-kiri">
+                <img src="assets/img/brandred.png" alt="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">My Project</a></li>
+            </ul>
+            <div class="menu-kanan">
+                <a href="index.html" class="btn">contact me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <button onclick="showMeHelloWorld()">Click me</button>
+    <div id="contents">
+        <p>Hello World</p>
+    </div> -->
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="submitData(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div>
+                        <label for="pName">Project Name</label>
+                        <input type="text" id="pName" />
+                    </div>
+                    <div style="display: flex;">
+                        <div>
+                            <label for="s-date">Start Date</label>
+                            <input type="date" id="s-date">
+                        </div>
+                        <div style="width: 2%;"></div>
+                        <div>
+                        <label for="e-date">End date</label>
+                        <input type="date" id="e-date">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="description">Descripton</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label for="">Technologies</label>
+                        <div style="display: flex; justify-content: start;" >
+                        <input type="checkbox" id="tech1" style="width: 50px; height: 15px " >
+                        <label for="tech1" style="width: 30%;">Node Js</label>
+                        <input type="checkbox" id="tech2" style="width: 50px; height: 15px " >
+                        <label for="tech2">React Js</label>
+                        </div>
+                        <div style="display: flex;">
+                            <input type="checkbox" id="tech3" style="width: 50px; height: 15px "  >
+                            <label for="tech3" style="width: 30%;">Next Js</label>
+                            <input type="checkbox" id="tech4" style="width: 50px; height: 15px " >
+                            <label for="tech4">Type Script</label>
+                            </div>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="input-blog-image-group">
+                            <label for="chooseFile">
+                                <p > Choose</p>
+                                <img src="assets/icon/file.png" alt="file" />
+                            </label>
+                            <input type="file" id="chooseFile" hidden />
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="line" />
+        <div id="contents" class="blog-list">
+            <!-- dynamic content would be here -->
+            <h1 style="margin-top: 100px;">MY PROJECT</h1>
+            <div class="container2" id="container2">
+            
+                
+          
+            </div>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+
+</html>
