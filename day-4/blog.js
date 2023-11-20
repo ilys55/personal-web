@@ -82,16 +82,3 @@ function renderBlog() {
                 </div>`
     }
 }
-function validasi() {
-    var valid = false;
-    if (document.getElementById("tech1").checked){
-        valid = true;
-    } else  if (valid = true){
-        alert ("sukses euy")
-
-    } else {
-        alert ("jirlah gagal")
-        return false;
-    }
-    
-}
